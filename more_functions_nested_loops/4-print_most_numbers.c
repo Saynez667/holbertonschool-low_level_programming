@@ -11,10 +11,8 @@ for (digit = '0'; digit <= '9'; digit++)
 {
 _putchar(digit);
 {
-if (digit == 2 && digit == 4)
-return(0)
-}
-}
+if (digit == '2' || digit == '4')
+continue;
 _putchar('\n');
 }
 
