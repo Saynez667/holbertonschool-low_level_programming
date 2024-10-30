@@ -14,6 +14,6 @@ while (src[i] != '\0')
 dest[i] = src[i];
 i++;
 }
-dest[i] = '\0';  // Copy the null terminator
+dest[i] = '\0';
 return dest;
 }
