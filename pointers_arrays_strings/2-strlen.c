@@ -1,9 +1,16 @@
 #include "main.h"
-#include <stdio.h>
-char greeting[] = {'H', 'e', 'l', 'l', 'o', '\0'};
-for (int i = 0; i < 5; i++) 
+/**
+* _strlen - returns the length of a string
+* @s: the string to measure
+*
+* Return: the length of the string
+*/
 {
-printf("%c", greeting[i]);
+int length = 0;
+while (*s != '\0')
+{
+length++;  
+s++;       
 }
-return 0;
+return length;
 }
