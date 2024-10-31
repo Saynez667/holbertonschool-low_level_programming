@@ -1,4 +1,12 @@
 #include "main.h"
+/**
+* _strncat - Concatenates two strings with a limit on the number of bytes.
+* @dest: The destination string to which src will be appended.
+* @src: The source string from which bytes will be taken.
+* @n: The maximum number of bytes to append from src.
+*
+* Return: A pointer to the resulting string dest.
+*/
 char *_strncat(char *dest, char *src, int n)
 {
 int dest_len = 0;
