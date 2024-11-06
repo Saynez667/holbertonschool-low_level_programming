@@ -1,9 +1,10 @@
 /**
-*Verifie tout les caracteres de *s
-*si le caractere que nous recherchons est c alors retourner au debut donc s
-*puis augmenter de 1 lettre
-*su c est identique a 0 alors retourner a s ou NULL
-**/
+* _strchr - Locates a character in a string
+* @s: The string to search
+* @c: The character to find
+*
+* Return: Pointer to the first occurrence of c in s, or NULL if not found
+*/
 char *_strchr(char *s, char c)
 {
 while (*s != '\0')
