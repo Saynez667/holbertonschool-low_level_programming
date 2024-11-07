@@ -11,23 +11,23 @@
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int count = 0;
-int found, i, j;
-for (i = 0; s[i] != '\0' ; i++)
+int is_accept;
+char *a;
+while (*s)
 {
-found = 0;
-for (j = 0; accpet[j] != '\0' ; j++)
+is_accept = 0;
+for (a = accept; *a; a++)
 {
-if (s[i] == accept [j])
+if (*s == *a)
 {
-found = 1;
+is_accept = 1;
 break;
 }
 }
-if (found ==0)
-{
-return (count);
+if (is_accept == 0)
+break;
+count++;
+s++;
 }
-count ++;
-}
-return (count);
+return (coun)t;
 }
