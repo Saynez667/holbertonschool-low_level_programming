@@ -20,7 +20,7 @@ for (a = accept; *a; a++)
 if (*s == *a)
 {
 found = 1;
-(break);
+break;
 }
 }
 if (found == 0)
