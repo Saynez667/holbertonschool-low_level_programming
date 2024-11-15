@@ -9,19 +9,21 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-char *concat;
-int len1, len2, total_len;
-if (s1 == NULL)
-s1 = "";
-if (s2 == NULL)
-s2 = "";
-len1 = strlen(s1);
-len2 = strlen(s2);
-total_len = len1 + len2;
-concat = malloc(sizeof(char) * (total_len + 1));
-if (concat == NULL)
+char *result;
+int i, j, len1 = 0, len2 = 0;
+if (s1 != NULL)
+while (s1[len1])
+len1++;
+if (s2 != NULL)
+while (s2[len2])
+len2++;
+result = malloc(sizeof(char) * (len1 + len2 + 1));
+if (result == NULL)
 return (NULL);
-strcpy(concat, s1);
-strcat(concat, s2);
-return (concat);
+for (i = 0; i < len1; i++)
+result[i] = s1[i];
+for (j = 0; j < len2; j++)
+result[i + j] = s2[j];
+result[i + j] = '\0';
+return (result);
 }
