@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-*_strdup - Duplique une chaîne de caractères
-*@str: La chaîne de caractères à dupliquer
-* Return: Un pointeur vers la nouvelle chaîne dupliquée,
-*ou NULL si l'allocation échoue ou si str est NULL
+*_strdup - Duplique une chaîne de caractès
+*@str: La chaîne de caractères à duplir
+* Return: Un pointeur vers la nouvelle chaîne dupliqué
+*ou NULL si l'allocation échoue ou si str est NUL
 */
 char *_strdup(char *str)
 {
