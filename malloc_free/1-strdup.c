@@ -9,13 +9,17 @@
 char *_strdup(char *str)
 {
 char *duplicate;
-size_t length;
+size_t length, i;
 if (str == NULL)
 return (NULL);
-length = strlen(str);
+length = 0;
+while (str[length] != '\0')
+length++;
 duplicate = malloc(sizeof(char) * (length + 1));
 if (duplicate == NULL)
 return (NULL);
-strcpy(duplicate, str);
+for (i = 0; i < length; i++)
+duplicate[i] = str[i];
+duplicate[length] = '\0';
 return (duplicate);
 }
