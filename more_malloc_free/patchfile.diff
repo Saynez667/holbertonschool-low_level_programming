@@ -1,0 +1,9 @@
+diff --git a/more_malloc_free/main.h b/more_malloc_free/main.h
+index 519d94f..c7eb604 100644
+--- a/more_malloc_free/main.h
++++ b/more_malloc_free/main.h
+@@ -1,3 +1,4 @@
++#ifndef MAIN_H
+ #define MAIN_H
+ #include <stddef.h>
+ void *malloc_checked(unsigned int b);
