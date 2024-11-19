@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Créer 3-calc.h
+cat > 3-calc.h <<EOL
+/**
+ * struct op - Struct op
+ *
+ * @op: The operator
+ * @f: The function associated
+ */
+typedef struct op
+{
+    char *op;
+    int (*f)(int a, int b);
+} op_t;
+
+int op_add(int a, int b);
+int op_sub(int a, int b);
+int op_mul(int a, int b);
+int op_div(int a, int b);
+int op_mod(int a, int b);
+int (*get_op_func(char *s))(int, int);
+
+EOL
+
+# Créer 3-op_functions.c
+cat > 3-op_functions.c <<EOL
+#include "3-calc.h"
+
+/* TODO: Implémentez les fonctions op_add, op_sub, op_mul, op_div, op_mod ici */
+
+EOL
+
+# Créer 3-get_op_func.c
+cat > 3-get_op_func.c <<EOL
+#include "3-calc.h"
+
+/* TODO: Implémentez la fonction get_op_func ici */
+
+EOL
+
+# Créer 3-main.c
+cat > 3-main.c <<EOL
+#include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/* TODO: Implémentez la fonction main ici */
+
+EOL
+
+echo "Les fichiers ont été créés avec succès ! Vous devez compléter les parties TODO."
