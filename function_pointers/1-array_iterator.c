@@ -13,8 +13,7 @@ if (array == NULL | size == 0)
 {
 return;
 }
-size_t i;
-for (i = 0; i < size; i++)
+for (int i = 0; i < size; i++)
 {
 action(array[i]);
 }
